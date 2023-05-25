@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DiffusionProfileReferences:
   - {fileID: 11400000, guid: 59c6e3f7660e60048a00ea00dc385d0d, type: 2}
   m_MaterialReferences: []
---- !u!114 &-4176093734881186592
+--- !u!114 &-2225857141584670563
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
