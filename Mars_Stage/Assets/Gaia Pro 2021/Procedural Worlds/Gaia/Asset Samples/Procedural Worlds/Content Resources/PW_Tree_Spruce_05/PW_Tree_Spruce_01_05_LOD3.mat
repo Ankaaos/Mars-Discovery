@@ -211,7 +211,7 @@ Material:
     - _PW_WorldMapColorCover1: {r: 1, g: 1, b: 1, a: 1}
     - _PW_WorldMapColorObject: {r: 1, g: 0.615529, b: 0.3443396, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &8087291516586196097
+--- !u!114 &6612215492672842977
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
