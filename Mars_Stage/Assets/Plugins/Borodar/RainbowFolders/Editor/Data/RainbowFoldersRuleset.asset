@@ -137,7 +137,7 @@ MonoBehaviour:
     Key: Plugins
     Ordinal: 10
     Priority: 0
-    IconType: 2100
+    IconType: 2600
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
     Key: Scenes
     Ordinal: 15
     Priority: 0
-    IconType: 2150
+    IconType: 2650
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
     Key: Assets/Script
     Ordinal: 27
     Priority: 0
-    IconType: 2620
+    IconType: 2660
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 1
@@ -389,7 +389,31 @@ MonoBehaviour:
     Key: Assets/UI
     Ordinal: 31
     Priority: 0
-    IconType: 50
+    IconType: 130
+    SmallIcon: {fileID: 0}
+    LargeIcon: {fileID: 0}
+    IsIconRecursive: 1
+    BackgroundType: 0
+    BackgroundTexture: {fileID: 0}
+    IsBackgroundRecursive: 0
+    IsHidden: 0
+  - Type: 1
+    Key: Assets/Gaia Pro 2021
+    Ordinal: 32
+    Priority: 0
+    IconType: 70
+    SmallIcon: {fileID: 0}
+    LargeIcon: {fileID: 0}
+    IsIconRecursive: 1
+    BackgroundType: 80
+    BackgroundTexture: {fileID: 0}
+    IsBackgroundRecursive: 0
+    IsHidden: 0
+  - Type: 1
+    Key: Assets/Ressources
+    Ordinal: 33
+    Priority: 0
+    IconType: 2620
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 0
