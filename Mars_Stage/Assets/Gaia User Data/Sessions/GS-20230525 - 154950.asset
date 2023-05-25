@@ -23,13 +23,132 @@ MonoBehaviour:
   m_terrainWidth: 1024
   m_terrainDepth: 1024
   m_terrainHeight: 1024
-  m_seaLevel: 25
+  m_seaLevel: 4
   m_spawnDensity: 1
   m_isLocked: 0
   m_previewImageBytes: 
   m_previewImageWidth: 0
   m_previewImageHeight: 0
-  m_operations: []
-  m_terrainMinMaxCache: []
-  m_bakedMaskCacheEntries: []
+  m_operations:
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 25/05/2023 16:25:01
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230525 - 162501
+    m_operationDateTime: 25/05/2023 16:25:01
+    scriptableObjectAssetGUID: 586b0761243f1f94b97b138fe8ac3fc5
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Multiple Spawners (10)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230525 - 162501
+    m_operationDateTime: 25/05/2023 16:25:30
+    scriptableObjectAssetGUID: 15537b478bd0f984da0b8aed9f3cb7d2
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  m_terrainMinMaxCache:
+  - guid: 2c2bc9862372b174097bcd9ec8c7b815
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 121.1581
+  - guid: Worldmap
+    isWorldmap: 1
+    recalculate: 0
+    min: 0
+    max: 0
+  m_bakedMaskCacheEntries:
+  - fileName: Terrain_0_0-20230525 - 162501_LayerGameObject_3584_12
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_12
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_12"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerTree_3584_5
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerTree_3584_5
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerTree_3584_5"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerGameObject_3584_2,5
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_2,5
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_2,5"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerGameObject_2560_-0,5
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerGameObject_2560_-0,5
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerGameObject_2560_-0,5"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerGameObject_512_2
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerGameObject_512_2
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerGameObject_512_2"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerGameObject_3584_2
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_2
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_2"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerTree_3584_-0,2
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerTree_3584_-0,2
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerTree_3584_-0,2"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerGameObject_3584_1,5
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_1,5
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_1,5"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerGameObject_3584_0,5
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_0,5
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerGameObject_3584_0,5"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerTree_1024_0
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerTree_1024_0
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerTree_1024_0"
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230525 - 162501_LayerTree_2048_0
+    assetPath: Assets/Gaia Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525
+      - 162501/Terrain_0_0-20230525 - 162501_LayerTree_2048_0
+    fullPath: "D:/Images/Art/PRO/Stage Plan\xE9tarium 3D/PROJET UNITY/Mars-Discovery/Mars_Stage/Assets/Gaia
+      Pro 2021/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230525 -
+      162501/Terrain_0_0-20230525 - 162501_LayerTree_2048_0"
+    texture: {fileID: 0}
   m_worldBiomeMaskSettings: {fileID: 0}
