@@ -15,18 +15,12 @@ public class InputManager : MonoBehaviour
     {
         _playerController = GetComponent<PlayerController>();
         _playerInput = GetComponent<PlayerInput>();
-        _moveActions = _playerInput.actions.FindAction("Move");
+        // _moveActions = _playerInput.actions.FindAction("Move");
     }
 
-    public void OnMove()
+    private void FixedUpdate()
     {
-        Vector2 direction = _moveActions.ReadValue<Vector2>();
-        Vector3 directionConvert = new Vector3(direction.x, 0f, direction.y);
-        // Vector3 velocity = directionConvert * _speed;
-        _playerController.Direction = directionConvert;
-
-        _playerController.ControlRotate();
-
-
+        _playerController.Move();
+        _playerController.Rotate();
     }
 }
