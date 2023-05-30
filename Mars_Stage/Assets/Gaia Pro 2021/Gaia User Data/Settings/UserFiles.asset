@@ -22,6 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 478b1d8831da6e04a816650905261559, type: 2}
   - {fileID: 11400000, guid: a23c1a713f25398419877498413d891f, type: 2}
   - {fileID: 11400000, guid: 94567904bf7d1a946a22315e5185e453, type: 2}
+  - {fileID: 11400000, guid: 416b581e88d21714f83c840ee639d52d, type: 2}
   m_gaiaManagerSpawnerSettings:
   - {fileID: 11400000, guid: c3867a1dc5d61694b9ade5a115ae2658, type: 2}
   - {fileID: 11400000, guid: 73049ac12c97b4c4d8547330a2b13c8b, type: 2}
@@ -80,6 +81,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e173694cbae17ac49be045f17e28062d, type: 2}
   - {fileID: 11400000, guid: fdec3c4c775f7b944ab32bc999c20531, type: 2}
   - {fileID: 11400000, guid: 81b0e93a964e9804c9806f8bde6ba9ec, type: 2}
+  - {fileID: 11400000, guid: 9dfe8e941bea50749a77c9511617a772, type: 2}
   m_exportTerrainSettings:
   - {fileID: 11400000, guid: e2f4c9ca1bbf7e14f8cf0968afef1545, type: 2}
   - {fileID: 11400000, guid: 4df53086319f20747ae21f39ef7a76aa, type: 2}
