@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using  UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour
 {
@@ -22,5 +23,10 @@ public class InputManager : MonoBehaviour
     {
         _playerController.Move();
         _playerController.Rotate();
+    }
+
+    public void OnReload()
+    {
+        SceneManager.LoadScene("Test_Gaia");
     }
 }
