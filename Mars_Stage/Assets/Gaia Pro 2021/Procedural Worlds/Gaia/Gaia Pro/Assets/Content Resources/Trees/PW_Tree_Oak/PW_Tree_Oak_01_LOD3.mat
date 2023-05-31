@@ -37,7 +37,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2460
   stringTagMap: {}
   disabledShaderPasses:
   - TransparentDepthPrepass
@@ -94,6 +94,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ALPHATEST: 1
+    - _AO: 2.4
     - _AOPower: 1
     - _AOPowerExp: 1
     - _AOVertexMask: 0.2
@@ -104,6 +105,7 @@ Material:
     - _AlphaTest: 0
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
+    - _BaseLight: 0.35
     - _BlendMode: 0
     - _BumpMapScale: 1
     - _CullMode: 2
@@ -118,6 +120,7 @@ Material:
     - _EnableFogOnTransparent: 1
     - _Glossiness: 0
     - _Metallic: 0
+    - _Occlusion: 7.5
     - _OpaqueCullMode: 2
     - _PW_Cover: 0
     - _PW_CoverLayer0AlphaClamp: 1
@@ -170,6 +173,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
+    - _SquashAmount: 1
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -211,6 +215,8 @@ Material:
     - _PW_WorldMapColorCover0: {r: 1, g: 1, b: 1, a: 1}
     - _PW_WorldMapColorCover1: {r: 1, g: 1, b: 1, a: 1}
     - _PW_WorldMapColorObject: {r: 1, g: 0.47652325, b: 0.25, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &7453829020065179290
 MonoBehaviour:
