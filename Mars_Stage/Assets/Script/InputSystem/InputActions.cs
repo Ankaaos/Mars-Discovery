@@ -35,6 +35,15 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Reload"",
+                    ""type"": ""Button"",
+                    ""id"": ""19e20a9e-7910-4ef4-b908-59198452060b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -103,6 +112,28 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""206ccff6-c2ef-4868-a01c-1b8ee56895fc"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8d548fc3-5b9d-4dfe-9634-5d9ad335faba"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -112,6 +143,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         // RoverPlayer
         m_RoverPlayer = asset.FindActionMap("RoverPlayer", throwIfNotFound: true);
         m_RoverPlayer_Move = m_RoverPlayer.FindAction("Move", throwIfNotFound: true);
+        m_RoverPlayer_Reload = m_RoverPlayer.FindAction("Reload", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -172,11 +204,13 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_RoverPlayer;
     private IRoverPlayerActions m_RoverPlayerActionsCallbackInterface;
     private readonly InputAction m_RoverPlayer_Move;
+    private readonly InputAction m_RoverPlayer_Reload;
     public struct RoverPlayerActions
     {
         private @InputActions m_Wrapper;
         public RoverPlayerActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_RoverPlayer_Move;
+        public InputAction @Reload => m_Wrapper.m_RoverPlayer_Reload;
         public InputActionMap Get() { return m_Wrapper.m_RoverPlayer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -189,6 +223,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Move.started -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnMove;
+                @Reload.started -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnReload;
+                @Reload.performed -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnReload;
+                @Reload.canceled -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnReload;
             }
             m_Wrapper.m_RoverPlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -196,6 +233,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @Reload.started += instance.OnReload;
+                @Reload.performed += instance.OnReload;
+                @Reload.canceled += instance.OnReload;
             }
         }
     }
@@ -203,5 +243,6 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     public interface IRoverPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnReload(InputAction.CallbackContext context);
     }
 }
