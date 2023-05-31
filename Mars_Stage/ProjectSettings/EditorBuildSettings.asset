@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Test_Biomes.unity
     guid: 05ffb5783b7256d40a6768fdedd20d2c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test_Gaia.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/test_gaia_rover.unity
+    guid: 41f09319fe80d8740baba9aba7954b2e
   m_configObjects: {}
