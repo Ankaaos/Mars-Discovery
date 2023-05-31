@@ -15,10 +15,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _backSpeed;
     [SerializeField] private float _rotateSpeed;
-    [SerializeField]private float _speedRotateWheels;
+    [SerializeField] private float _speedRotateWheels;
 
     [SerializeField] private Transform[] _transformWheels;
-    
+
 
     private Rigidbody _rb;
     private Quaternion _targetRotation;
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-        
+
     }
 
     public void SetDirection(Vector3 direction)
@@ -38,19 +38,33 @@ public class PlayerController : MonoBehaviour
     {
         // Récupérer l'axe vertical du joystick gauche
         float moveY = Gamepad.current.leftStick.y.ReadValue();
+        float rotateSpeed = _speedRotateWheels;
 
         // Calculer le mouvement en fonction de l'axe vertical et de la rotation
         Vector3 movement = transform.forward * moveY;
         movement *= _speed * Time.fixedDeltaTime;
 
         // Speed movement
-        if(moveY < 0)
+        if (moveY < 0)
         {
             movement *= _backSpeed * Time.fixedDeltaTime;
+            // rotateSpeed = -_speedRotateWheels * Time.fixedDeltaTime;
+            // Debug.Log("Arrière");
+
         }
-        else
+        if (moveY > 0)
         {
             movement *= _speed * Time.fixedDeltaTime;
+            // rotateSpeed = _speedRotateWheels * Time.fixedDeltaTime;
+
+
+            // Debug.Log("Avant");
+
+
+        }
+        if (moveY == 0)
+        {
+            // _speedRotateWheels = 0;
         }
 
         _rb.MovePosition(_rb.position + movement);
@@ -67,14 +81,16 @@ public class PlayerController : MonoBehaviour
         _rb.MoveRotation(_rb.rotation * deltaRotation);
 
         WheelRotate();
-        
+
+
+
     }
 
     public void WheelRotate()
     {
-        foreach(Transform transform in _transformWheels)
+        foreach (Transform transform in _transformWheels)
         {
-            transform.rotation *= Quaternion.Euler( 0, Time.deltaTime * _speedRotateWheels,  0);
+            transform.rotation *= Quaternion.Euler(0, Time.deltaTime * _speedRotateWheels, 0);
         }
     }
 

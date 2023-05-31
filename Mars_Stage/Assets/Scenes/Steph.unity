@@ -1540,7 +1540,7 @@ MonoBehaviour:
   _speed: 15
   _backSpeed: 5
   _rotateSpeed: 50
-  _speedRotateWheels: 100
+  _speedRotateWheels: -100
   _transformWheels:
   - {fileID: 1569326237}
   - {fileID: 957303517}
@@ -2484,7 +2484,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9ef20428c6e43354f83d87fa1534b06e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03999996
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ef20428c6e43354f83d87fa1534b06e,
         type: 3}
@@ -2530,6 +2530,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: rover_6_crashtest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245136101858998298, guid: 9ef20428c6e43354f83d87fa1534b06e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245136101858998298, guid: 9ef20428c6e43354f83d87fa1534b06e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70710665
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245136101858998298, guid: 9ef20428c6e43354f83d87fa1534b06e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000032782546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245136101858998298, guid: 9ef20428c6e43354f83d87fa1534b06e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000029802315
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245136101858998298, guid: 9ef20428c6e43354f83d87fa1534b06e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245136101858998298, guid: 9ef20428c6e43354f83d87fa1534b06e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ef20428c6e43354f83d87fa1534b06e, type: 3}
