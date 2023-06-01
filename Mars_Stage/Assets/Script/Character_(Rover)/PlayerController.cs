@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
         if (moveY > 0)
         {
             movement *= _speed * Time.fixedDeltaTime;
-            Debug.Log("arriere");
+            
 
             WheelRotateFront();
             
