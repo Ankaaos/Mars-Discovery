@@ -27,6 +27,6 @@ public class InputManager : MonoBehaviour
 
     public void OnReload()
     {
-        SceneManager.LoadScene("Test_Gaia");
+        SceneManager.LoadScene("test_gaia_rover");
     }
 }
