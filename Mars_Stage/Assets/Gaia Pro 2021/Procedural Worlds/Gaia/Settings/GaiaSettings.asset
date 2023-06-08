@@ -55,7 +55,7 @@ MonoBehaviour:
   m_currentWater: 0
   m_enableUnderwaterEffects: 1
   m_createWind: 1
-  m_windType: 2
+  m_windType: 3
   m_createScreenShotter: 1
   m_focusPlayerOnSetup: 0
   m_FPFDefaultThreshold: 5000

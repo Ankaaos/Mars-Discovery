@@ -7,8 +7,8 @@ TerrainLayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Gaia_-20230607-154954_0
-  m_DiffuseTexture: {fileID: 2800000, guid: ae548727ed0abc645ad76b70534ca74f, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: 78e598f8d69ec7e4cb840837fea58ed0, type: 3}
+  m_DiffuseTexture: {fileID: 2800000, guid: 287d1307de06fd443bdd6ae511758a16, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: 7f0da5e6144d0d14c97d510e960442fd, type: 3}
   m_MaskMapTexture: {fileID: 2800000, guid: 468a13c4e1ec46f438f5ebdaf1147fbe, type: 3}
   m_TileSize: {x: 8, y: 8}
   m_TileOffset: {x: 0, y: 0}
