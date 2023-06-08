@@ -268,6 +268,226 @@ MonoBehaviour:
     sessionPlaybackState: 1
     m_terrainsFoldedOut: 0
     m_serializedExternalAction: 
+  - m_description: RaiseHeight - Ancient Canyons 03
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 09:56:29
+    scriptableObjectAssetGUID: c87d2b09e86afc3408e3052971032482
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 09:56:31
+    scriptableObjectAssetGUID: bcbb6821667afe641b062127fcea7c25
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - Ancient Canyons 06
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:03:19
+    scriptableObjectAssetGUID: 6c693980223e80b4f86a67d8ee70cdb7
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:03:21
+    scriptableObjectAssetGUID: cc7161e046189004e8f119eecd368371
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: LowerHeight - Crater Field 05
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:30:55
+    scriptableObjectAssetGUID: 33e795e759438f04ead7caa8b571b617
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:30:57
+    scriptableObjectAssetGUID: 48b32984fc82c36448376c7ba2b41792
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 2k Plains 2
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:37:23
+    scriptableObjectAssetGUID: c378432dc1884e1488ea10caf1aa0be3
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:37:25
+    scriptableObjectAssetGUID: ebac71b17b9c6614999037b16df85b69
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 2k Plains 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:41:44
+    scriptableObjectAssetGUID: a375d6962ce205d47b4ca2a0e968d463
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:41:45
+    scriptableObjectAssetGUID: d0a737f0eb5bc914e87b3709f855cf20
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - Ancient Canyons 02
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:46:49
+    scriptableObjectAssetGUID: f598a499e5870434980486c83acf5e81
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:46:50
+    scriptableObjectAssetGUID: 50dd2e168685e4f47b0b8f395a98cc01
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - Ancient Canyons 07
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:50:30
+    scriptableObjectAssetGUID: 75248416d8b767d4883da60029631884
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:50:31
+    scriptableObjectAssetGUID: a625211e23de76d41a68df70e79a7a5b
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - Ancient Canyons 10
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:54:51
+    scriptableObjectAssetGUID: 549e99ef43c18aa45ab5f87f79fef18a
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 10:54:53
+    scriptableObjectAssetGUID: d84f66ffc38591649aff9127b555d03c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 11:05:20
+    scriptableObjectAssetGUID: 5904445e546230048b1a2d1a9a01445f
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 11:10:36
+    scriptableObjectAssetGUID: 91a65db3e1431cb4bb7b58a333cf228b
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 11:10:46
+    scriptableObjectAssetGUID: 3604e78d5b509444f82b6162695f1a25
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Unknown
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 11:17:16
+    scriptableObjectAssetGUID: 8c7e7f5172b65cf43814e97aeb425d7c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
   m_terrainMinMaxCache:
   - guid: 03720586b81d1c14fbcb76dd79bd1e33
     isWorldmap: 0
@@ -287,8 +507,8 @@ MonoBehaviour:
   - guid: d16c95739e107f846b3124e2b25d4076
     isWorldmap: 0
     recalculate: 0
-    min: 1.1250172
-    max: 70.17294
+    min: 0.015625238
+    max: 74.25114
   - guid: Worldmap
     isWorldmap: 1
     recalculate: 0
