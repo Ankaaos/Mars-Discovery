@@ -202,6 +202,72 @@ MonoBehaviour:
     sessionPlaybackState: 1
     m_terrainsFoldedOut: 0
     m_serializedExternalAction: 
+  - m_description: RaiseHeight - 2k Mesa 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 09:44:11
+    scriptableObjectAssetGUID: 188e7aeea83329e4b8b058775c7d480c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 09:44:13
+    scriptableObjectAssetGUID: 10497c6cb9b56c84d9262e31414044a1
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Undo - 1 Terrains
+    m_operationType: 5
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 09:44:44
+    scriptableObjectAssetGUID: 4eab3e839224f314799fdb4420038148
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 2k Mesa 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 09:45:10
+    scriptableObjectAssetGUID: 83cf9349618345d40ba728ec7fc81c79
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 09:45:11
+    scriptableObjectAssetGUID: 26fcc57de54ed7f4d9915c3a90cec30f
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230607 - 154952
+    m_operationDateTime: 08/06/2023 09:46:05
+    scriptableObjectAssetGUID: 51f69482d2e390a4580ff2dbd658d9ff
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
   m_terrainMinMaxCache:
   - guid: 03720586b81d1c14fbcb76dd79bd1e33
     isWorldmap: 0
@@ -222,7 +288,7 @@ MonoBehaviour:
     isWorldmap: 0
     recalculate: 0
     min: 1.1250172
-    max: 35.46929
+    max: 70.17294
   - guid: Worldmap
     isWorldmap: 1
     recalculate: 0
