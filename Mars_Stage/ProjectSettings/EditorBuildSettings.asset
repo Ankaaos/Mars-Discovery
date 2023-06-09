@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/A_Test_TerrainStampImport2.unity
+    guid: cbe8d1debc1c47846bc6cc0fe2b9ba42
+  - enabled: 1
+    path: Assets/Scenes/A_Test_StampTerrainImport.unity
+    guid: d4b7e6748220ef846bf6d021e7f9d540
+  - enabled: 1
+    path: Assets/Scenes/A_Test_StampTerrain.unity
+    guid: 08cbc0c606df4164d9262d8f1ce8ce25
+  - enabled: 1
     path: Assets/Scenes/A_CreationTerrain.unity
     guid: 0c0672ea86bcc444eb7f15f6f8cc1ec0
   - enabled: 1
