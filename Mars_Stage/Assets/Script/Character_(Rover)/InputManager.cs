@@ -16,8 +16,15 @@ public class InputManager : MonoBehaviour
     {
         _playerController = GetComponent<PlayerController>();
         _playerInput = GetComponent<PlayerInput>();
-        // _moveActions = _playerInput.actions.FindAction("Move");
+        _moveActions = _playerInput.actions.FindAction("Move");
     }
+
+    // public void OnMove()
+    // {
+    //     Vector2 direction = _moveActions.ReadValue<Vector2>();
+    //     Vector3 directConvert = new Vector3(direction.x, 0, direction.y);
+    //     Debug.Log("Test manette");
+    // }
 
     private void FixedUpdate()
     {
@@ -30,3 +37,4 @@ public class InputManager : MonoBehaviour
         SceneManager.LoadScene("test_gaia_rover");
     }
 }
+  

@@ -49,7 +49,8 @@ public class PlayerController : MonoBehaviour
         {
             movement *= _backSpeed * Time.fixedDeltaTime;
             
-            WheelRotateBack();
+            
+            WheelRotateFront();
 
         }
 
@@ -58,8 +59,8 @@ public class PlayerController : MonoBehaviour
         {
             movement *= _speed * Time.fixedDeltaTime;
             
-
-            WheelRotateFront();
+            WheelRotateBack();
+            
             
         }
         else
