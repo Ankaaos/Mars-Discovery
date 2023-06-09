@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_terrainMinMaxCache:
   - guid: d16c95739e107f846b3124e2b25d4076
     isWorldmap: 0
-    recalculate: 1
+    recalculate: 0
     min: 0.031250477
     max: 148.50227
   - guid: c28c03235215e144bbe11eaae7bfe30f
