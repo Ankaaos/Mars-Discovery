@@ -3,7 +3,7 @@
 # Unity files
 *.meta -text merge=unityyamlmerge diff
 *.unity -text merge=unityyamlmerge diff
-*.asset -text merge=unityyamlmerge diff
+*.asset merge=unityyamlmerge eol=lf
 *.prefab -text merge=unityyamlmerge diff
 *.mat -text merge=unityyamlmerge diff
 *.anim -text merge=unityyamlmerge diff
