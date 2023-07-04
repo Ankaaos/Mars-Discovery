@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
         // Récupérer l'axe vertical du joystick gauche
         float moveY = Gamepad.current.leftStick.y.ReadValue();
         
-
         // Calculer le mouvement en fonction de l'axe vertical et de la rotation
         Vector3 movement = transform.forward * moveY;
         movement *= _speed * Time.fixedDeltaTime;
@@ -47,31 +46,18 @@ public class PlayerController : MonoBehaviour
         //move back
         if (moveY < 0)
         {
-            movement *= _backSpeed * Time.fixedDeltaTime;
-            
-            
+            movement *= _backSpeed * Time.fixedDeltaTime;   
             WheelRotateFront();
-
         }
 
         // move front
         if (moveY > 0)
         {
-            movement *= _speed * Time.fixedDeltaTime;
-            
-            WheelRotateBack();
-            
-            
+            movement *= _speed * Time.fixedDeltaTime;    
+            WheelRotateBack(); 
         }
-        else
-        {
-            // _speedRotateWheels = 0f;
-        }
-
-        
 
         _rb.MovePosition(_rb.position + movement);
-
     }
 
     public void Rotate()
@@ -82,11 +68,6 @@ public class PlayerController : MonoBehaviour
         // Calculer la rotation en fonction de l'axe
         Quaternion deltaRotation = Quaternion.Euler(Vector3.up * (rotation * _rotateSpeed * Time.fixedDeltaTime));
         _rb.MoveRotation(_rb.rotation * deltaRotation);
-
-        // WheelRotate();
-
-
-
     }
 
     public void WheelRotateFront()
