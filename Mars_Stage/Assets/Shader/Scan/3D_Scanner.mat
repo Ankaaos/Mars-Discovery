@@ -51,7 +51,7 @@ Material:
     - _DstBlend: 0
     - _QueueControl: 1
     - _QueueOffset: 0
-    - _Range: 0.69
+    - _Range: 0.25
     - _SampleGI: 0
     - _SrcBlend: 1
     - _Surface: 0
