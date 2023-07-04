@@ -35,7 +35,7 @@ public class InputManager : MonoBehaviour
 
     public void OnReload()
     {
-        SceneManager.LoadScene("test_gaia_rover");
+        SceneManager.LoadScene("S_CreationTerrain_Rover");
     }
 
     public void OnScan()
