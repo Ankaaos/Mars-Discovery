@@ -44,6 +44,15 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Scan"",
+                    ""type"": ""Button"",
+                    ""id"": ""a4ef306a-fa33-4c71-aa24-ac0eefd7d8ab"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -134,6 +143,28 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""action"": ""Reload"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""da2f1907-464b-4737-8fab-4eb1cb64745a"",
+                    ""path"": ""<XInputController>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Scan"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d3f6133-585f-4dda-a675-14fb1eac1b76"",
+                    ""path"": ""<DualShockGamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Scan"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -144,6 +175,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         m_RoverPlayer = asset.FindActionMap("RoverPlayer", throwIfNotFound: true);
         m_RoverPlayer_Move = m_RoverPlayer.FindAction("Move", throwIfNotFound: true);
         m_RoverPlayer_Reload = m_RoverPlayer.FindAction("Reload", throwIfNotFound: true);
+        m_RoverPlayer_Scan = m_RoverPlayer.FindAction("Scan", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -205,12 +237,14 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     private IRoverPlayerActions m_RoverPlayerActionsCallbackInterface;
     private readonly InputAction m_RoverPlayer_Move;
     private readonly InputAction m_RoverPlayer_Reload;
+    private readonly InputAction m_RoverPlayer_Scan;
     public struct RoverPlayerActions
     {
         private @InputActions m_Wrapper;
         public RoverPlayerActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_RoverPlayer_Move;
         public InputAction @Reload => m_Wrapper.m_RoverPlayer_Reload;
+        public InputAction @Scan => m_Wrapper.m_RoverPlayer_Scan;
         public InputActionMap Get() { return m_Wrapper.m_RoverPlayer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -226,6 +260,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Reload.started -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnReload;
                 @Reload.performed -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnReload;
                 @Reload.canceled -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnReload;
+                @Scan.started -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnScan;
+                @Scan.performed -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnScan;
+                @Scan.canceled -= m_Wrapper.m_RoverPlayerActionsCallbackInterface.OnScan;
             }
             m_Wrapper.m_RoverPlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -236,6 +273,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Reload.started += instance.OnReload;
                 @Reload.performed += instance.OnReload;
                 @Reload.canceled += instance.OnReload;
+                @Scan.started += instance.OnScan;
+                @Scan.performed += instance.OnScan;
+                @Scan.canceled += instance.OnScan;
             }
         }
     }
@@ -244,5 +284,6 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnReload(InputAction.CallbackContext context);
+        void OnScan(InputAction.CallbackContext context);
     }
 }
