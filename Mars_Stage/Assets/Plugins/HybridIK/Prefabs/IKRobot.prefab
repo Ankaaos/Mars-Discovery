@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6556125932032244995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6556125932032244997}
+  - component: {fileID: 6556125932032244994}
+  m_Layer: 0
+  m_Name: IKRobot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6556125932032244997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556125932032244995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.88, y: 7.07, z: -18.336}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6556125932032244994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556125932032244995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec18f272cdf3e704196131d48566ee83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 0}
+  endNode: {fileID: 0}
+  initializePoseFrom: 0
+  nodeRadius: 0.1
+  targetTransform: {fileID: 0}
+  mode: 2
+  numIterations: 2
+  constrainEndOrientation: 0
+  constrainInGlobalSpace: 0
+  nodes: []
+  enableJointLimits: 1
+  jointLimitStrength: 0.75
+  useStrictLimits: 0
+  enableStretch: 1
+  useAngularMotionMotorConstraints: 0
+  jointAngularAcceleration: 20
+  jointMaxAnglarVelocity: 45
+  jointAngularSmoothingFactor: 0.9
+  useStretchMotionMotorConstraints: 0
+  jointStretchAcceleration: 1
+  jointMaxStretchVelocity: 1
+  jointStretchSmoothingFactor: 0.9
+  enableKeyframeConstraints: 1
+  strictlyProjectToKeyframeSpace: 0
+  constraints: []

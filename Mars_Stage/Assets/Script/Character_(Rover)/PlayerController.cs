@@ -38,37 +38,26 @@ public class PlayerController : MonoBehaviour
     {
         // Récupérer l'axe vertical du joystick gauche
         float moveY = Gamepad.current.leftStick.y.ReadValue();
-        float rotateSpeed = _speedRotateWheels;
-
+        
         // Calculer le mouvement en fonction de l'axe vertical et de la rotation
         Vector3 movement = transform.forward * moveY;
         movement *= _speed * Time.fixedDeltaTime;
 
-        // Speed movement
+        //move back
         if (moveY < 0)
         {
-            movement *= _backSpeed * Time.fixedDeltaTime;
-            // rotateSpeed = -_speedRotateWheels * Time.fixedDeltaTime;
-            // Debug.Log("Arrière");
-
+            movement *= _backSpeed * Time.fixedDeltaTime;   
+            WheelRotateFront();
         }
+
+        // move front
         if (moveY > 0)
         {
-            movement *= _speed * Time.fixedDeltaTime;
-            // rotateSpeed = _speedRotateWheels * Time.fixedDeltaTime;
-
-
-            // Debug.Log("Avant");
-
-
-        }
-        if (moveY == 0)
-        {
-            // _speedRotateWheels = 0;
+            movement *= _speed * Time.fixedDeltaTime;    
+            WheelRotateBack(); 
         }
 
         _rb.MovePosition(_rb.position + movement);
-
     }
 
     public void Rotate()
@@ -79,18 +68,21 @@ public class PlayerController : MonoBehaviour
         // Calculer la rotation en fonction de l'axe
         Quaternion deltaRotation = Quaternion.Euler(Vector3.up * (rotation * _rotateSpeed * Time.fixedDeltaTime));
         _rb.MoveRotation(_rb.rotation * deltaRotation);
-
-        WheelRotate();
-
-
-
     }
 
-    public void WheelRotate()
+    public void WheelRotateFront()
     {
         foreach (Transform transform in _transformWheels)
         {
-            transform.rotation *= Quaternion.Euler(0, Time.deltaTime * _speedRotateWheels, 0);
+            transform.rotation *= Quaternion.Euler(0, _speedRotateWheels *_speed  * Time.deltaTime, 0);
+        }
+    }
+
+    public void WheelRotateBack()
+    {
+        foreach (Transform transform in _transformWheels)
+        {
+            transform.rotation *= Quaternion.Euler(0, -_speedRotateWheels *_backSpeed  * Time.deltaTime, 0);
         }
     }
 
