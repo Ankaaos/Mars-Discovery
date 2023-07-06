@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ScannerController : MonoBehaviour
 {
-    [Header("Speed")] 
+    [Header("Speed")]
     [SerializeField] private float _speed;
 
-    [Header("Destroy Time")] 
+    [Header("Destroy Time")]
     [SerializeField] private float _delayDestroy;
 
     private void Start()
@@ -20,6 +20,14 @@ public class ScannerController : MonoBehaviour
         Vector3 vectorMesh = this.transform.localScale;
         float growing = this._speed * Time.deltaTime;
         this.transform.localScale = new Vector3(vectorMesh.x + growing, vectorMesh.y + growing, vectorMesh.z + growing);
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {   
+        if(col.gameObject.CompareTag("Rock"))
+        {
+            Debug.Log("Rock colision");
+        }
     }
 
     public void DestroyObject()

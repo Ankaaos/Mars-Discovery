@@ -48,14 +48,14 @@ Material:
     - _Float: -15.92
     - _QueueControl: 1
     - _QueueOffset: 0
-    - _Range: 46.8
+    - _Range: 2.06
     - _SrcBlend: 5
     - _Surface: 1
     - _ZTest: 4
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 0, g: 40.51252, b: 85.46086, a: 0}
+    - _Color: {r: 0, g: 0.30714092, b: 9.189588, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6244240244028487543
 MonoBehaviour:

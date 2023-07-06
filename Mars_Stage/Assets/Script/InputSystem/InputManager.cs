@@ -8,11 +8,15 @@ public class InputManager : MonoBehaviour
 {
     private PlayerInput _playerInput;
     private PlayerController _playerController;
-    private InputAction _moveActions;
+    private InputAction _moveActions; 
+
+    [Header("Scanner")]
+    [SerializeField] private GameObject _scanPrefab; 
+    [SerializeField] private Transform _spawnScanner; 
     // [SerializeField] private float _speed;
     // private Quaternion _lastRotation;
 
-    private void Awake()
+    public void Awake()
     {
         _playerController = GetComponent<PlayerController>();
         _playerInput = GetComponent<PlayerInput>();
@@ -27,7 +31,7 @@ public class InputManager : MonoBehaviour
     //     Debug.Log("Test manette");
     // }
 
-    private void FixedUpdate()
+    public void FixedUpdate()
     {
         _playerController.Move();
         _playerController.Rotate();
@@ -40,7 +44,8 @@ public class InputManager : MonoBehaviour
 
     public void OnScan()
     {
-        Debug.Log("Scan");
+        Instantiate(_scanPrefab, transform.position, Quaternion.identity);
+        
     }
 }
   
