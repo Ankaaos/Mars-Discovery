@@ -8,22 +8,17 @@ public class ScannerController : MonoBehaviour
     [Header("| Scanner |")]
     [SerializeField] private float _speed;
     [SerializeField] private float _delayDestroy;
-    public bool _destroy = false;
+    public float DelayDestroy { get => _delayDestroy; set => _delayDestroy = value; }
 
-    [Header("Script")]
-    [SerializeField] private Shader_Manager _shaderManager;
-
+    [SerializeField] private SphereDetection _sphereDetection;
 
 
-
-    private void Awake()
-    {
-        _shaderManager = FindObjectOfType<Shader_Manager>();
-
-    }
+    // [Header("Script")]
+    // [SerializeField] private Shader_Manager _shaderManager;
 
     private void Start()
     {
+        _sphereDetection = GetComponent<SphereDetection>();
         DestroyObject();
     }
 
@@ -33,29 +28,40 @@ public class ScannerController : MonoBehaviour
         float growing = this._speed * Time.deltaTime;
         this.transform.localScale = new Vector3(vectorMesh.x + growing, vectorMesh.y + growing, vectorMesh.z + growing);
 
-        Debug.Log(_delayDestroy);
-
-
-    }
-
-    private void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.CompareTag("Rock"))
-        {
-            _shaderManager._opacity = 1;
-            _destroy = true;
-
-        }
+        // _sphereDetection = GetComponent<SphereDetection>();
+        _sphereDetection = FindObjectOfType<SphereDetection>();
 
     }
 
 
     public void DestroyObject()
     {
-        
         Destroy(this.gameObject, _delayDestroy);
+    }
 
+    public void TriggerSphereDetection()
+    {
+        if(_sphereDetection == null)
+        {
+            return;
+        }
+        _sphereDetection.StartDetection();
+        
     }
 
 
 }
+
+// private void Awake()
+//     {
+//         _shaderManager = FindObjectOfType<Shader_Manager>();
+//     }
+
+// if (objShaderManager != null)
+            //{
+                // objShaderManager.StartFadeInCouroutine();
+                // _shaderManager._opacity = 1;
+                // _shaderManager.UpdateOpcaticy();
+                
+                // objShaderManager.StartFadeOutCouroutine();
+            //}
