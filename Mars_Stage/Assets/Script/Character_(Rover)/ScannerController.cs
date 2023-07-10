@@ -20,7 +20,12 @@ public class ScannerController : MonoBehaviour
     {
         _sphereDetection = GetComponent<SphereDetection>();
         DestroyObject();
+
+        Debug.Log("SphereDetection reference: " + _sphereDetection);
+
     }
+
+
 
     private void Update()
     {
@@ -30,6 +35,9 @@ public class ScannerController : MonoBehaviour
 
         // _sphereDetection = GetComponent<SphereDetection>();
         _sphereDetection = FindObjectOfType<SphereDetection>();
+
+        
+
 
     }
 
@@ -47,6 +55,11 @@ public class ScannerController : MonoBehaviour
         }
         _sphereDetection.StartDetection();
         
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        _sphereDetection.StartDetection();
     }
 
 

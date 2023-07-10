@@ -5,13 +5,21 @@ public class SphereDetection : MonoBehaviour
 {
     [SerializeField] private float sphereRadius = 1f;
     [SerializeField] private LayerMask detectionLayer;
+    [SerializeField] private Material _mat;
 
-    private Shader_Manager _shaderManager;
+    [SerializeField] private Shader_Manager _shaderManager;
 
 
     private void Awake()
     {
         _shaderManager = GetComponent<Shader_Manager>();
+        Debug.Log("SphereDetection Awake");
+
+    }
+
+    private void Start()
+    {
+        _shaderManager = FindObjectOfType<Shader_Manager>();
     }
     public void StartDetection()
     {
@@ -24,22 +32,24 @@ public class SphereDetection : MonoBehaviour
         // Effectuez le SphereCastAll
         RaycastHit[] hits = Physics.SphereCastAll(center, radius, direction, maxDistance, detectionLayer);
 
-
-
         // Parcourez les résultats du SphereCastAll
         for (int i = 0; i < hits.Length; i++)
         {
-            // Debug.Log(detectionLayer);
-            Destroy(hits[i].collider.gameObject);
-            // _shaderManager._opacity = 1;
+            // Destroy(hits[i].collider.gameObject);
 
+            Renderer renderer = hits[i].collider.GetComponent<Renderer>();
 
+            if (renderer != null)
+            {
+                renderer.material = _mat;
+                _shaderManager.SetOpacityForMaterial(renderer.material, 1f);
+            }
         }
     }
 
     private void OnDrawGizmosSelected()
     {
-        // Afficher le gizmo de la sphère de rayonnement
+        
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, transform.localScale.x * sphereRadius);
     }

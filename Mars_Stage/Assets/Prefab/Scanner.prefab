@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 50
   _delayDestroy: 10
+  _sphereDetection: {fileID: 0}
 --- !u!114 &7861128314228763287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,3 +130,5 @@ MonoBehaviour:
   detectionLayer:
     serializedVersion: 2
     m_Bits: 128
+  _mat: {fileID: 2100000, guid: 61d74e0664993b94fb8aa7ce4b3bcb3c, type: 2}
+  _shaderManager: {fileID: 0}

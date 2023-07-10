@@ -7,45 +7,57 @@ public class Shader_Manager : MonoBehaviour
     [Header("| Outline |")]
     [SerializeField] private Material _mat;
 
-
+    [SerializeField][Range(0, 10)] private float _delayDisableOutline;
     public float _opacity;
+
+    private Coroutine opacityResetCouroutine;
 
     [Header("Script")]
     [SerializeField] private ScannerController _scanControl;
-
-    private void Awake()
-    {
-    }
 
 
     private void Start()
     {
         _opacity = 0;
         UpdateOpcaticy();
+
+        Debug.Log("ScannerController Start");
     }
 
     private void Update()
     {
         _scanControl = FindObjectOfType<ScannerController>();
-
         UpdateOpcaticy();
-        if(_scanControl == null)
+        if (_scanControl == null)
         {
             return;
         }
-        
         _scanControl.TriggerSphereDetection();
-
-
-
     }
 
     public void UpdateOpcaticy()
     {
         _mat.SetFloat("_Opacity", _opacity);
-
     }
 
+    // public void SetOpacity(float opacity)
+    // {
+    //     _opacity = opacity;
+    //     UpdateOpcaticy();
+    // }
+
+    public void SetOpacityForMaterial(Material material, float opacity)
+    {
+        material.SetFloat("_Opacity", opacity);
+        StartCoroutine(ResetOpacityAfterDelay(material, 5f)); // Remplacez 5f par la durée désirée en secondes
+    }
+
+    private IEnumerator ResetOpacityAfterDelay(Material material, float delay)
+    {
+        yield return new WaitForSeconds(_delayDisableOutline);
+        material.SetFloat("_Opacity", 0);
+        
+    }
 
 }
 
