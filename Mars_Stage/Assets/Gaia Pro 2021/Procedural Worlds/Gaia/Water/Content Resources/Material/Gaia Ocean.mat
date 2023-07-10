@@ -62,19 +62,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalLayer0:
-        m_Texture: {fileID: 2800000, guid: bde6cb2e213a1a84a9a579bfd2ac765e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6363b7dc8a945c548a4e055d702f6c81, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalLayer1:
-        m_Texture: {fileID: 2800000, guid: 2b558bab7c9a3284191fc5fdff992601, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6363b7dc8a945c548a4e055d702f6c81, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalLayer2:
-        m_Texture: {fileID: 2800000, guid: ba8b90b254eca554697a571d28aa6b1c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6363b7dc8a945c548a4e055d702f6c81, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WaterDepthRamp:
-        m_Texture: {fileID: 2800000, guid: a6579f1ba5aa4f7458912c2c0d40235d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 963c350b718c6414e96f8c5692f060b1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -110,24 +110,24 @@ Material:
     - _FoamBubbblesScale: 0.5
     - _FoamBubblesStrength: 0.8
     - _FoamBubblesTile: 1536
-    - _FoamDepth: 1
+    - _FoamDepth: 0.5
     - _FoamEdge: 0.25
     - _FoamMoveSpeed: 0.3
     - _FoamStrength: 2
-    - _FoamTexTile: 256
+    - _FoamTexTile: 128
     - _Foam_Metallic: 0.4
     - _Foam_Smoothness: 0.2
     - _Metallic: 0.2
-    - _NormalFadeDistance: 300
+    - _NormalFadeDistance: 400
     - _NormalFadeStart: 50
     - _NormalLayer0: 0.4
     - _NormalLayer0Scale: 0.4
     - _NormalLayer1: 0.6
-    - _NormalLayer1Scale: 0.33
-    - _NormalLayer2Scale: 0.08
+    - _NormalLayer1Scale: 0.4
+    - _NormalLayer2Scale: 0.36
     - _NormalMoveScale: 0.0003
     - _NormalSpeed: 1.25
-    - _NormalTile: 512
+    - _NormalTile: 128
     - _OpaqueCullMode: 2
     - _PW_DstBlend: 0
     - _PW_MainLightIntensity: 5.5
@@ -159,7 +159,7 @@ Material:
     - _SurfaceType: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
-    - _TransparentDepth: 0.3
+    - _TransparentDepth: 0.05
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
     - _TransparentMin: 0
@@ -170,10 +170,10 @@ Material:
     - _UseShadowThreshold: 0
     - _WaveBackwashToggle: 0
     - _WaveDirGlobal: 0
-    - _WaveLength: 128
+    - _WaveLength: 64
     - _WavePeakToggle: 1
     - _WaveShoreClamp: 0
-    - _WaveSpeed: 10
+    - _WaveSpeed: 8
     - _WaveSteepness: 0.1
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
