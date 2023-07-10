@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4753129648115310}
   - component: {fileID: 33618530104089092}
   - component: {fileID: 23828853154504410}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rock_05_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4159828343423522}
   m_RootOrder: 2
@@ -51,14 +52,16 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c6e19ac80739fd14cad01313b97771b5, type: 2}
+  - {fileID: 2100000, guid: 9c6d922302fb78a43a864910066476a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,6 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1270014919971096
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +94,7 @@ GameObject:
   - component: {fileID: 4159828343423522}
   - component: {fileID: 205827968350408882}
   - component: {fileID: 64534954533475522}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rock_05_Sand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,6 +111,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4698757509583758}
   - {fileID: 4056469212665022}
@@ -151,9 +156,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: f97410c38881ba64ea42701ac5489b58, type: 3}
 --- !u!1 &1281249976286772
 GameObject:
@@ -166,7 +171,7 @@ GameObject:
   - component: {fileID: 4698757509583758}
   - component: {fileID: 33769999613047892}
   - component: {fileID: 23913616793883496}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rock_05_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,6 +188,7 @@ Transform:
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4159828343423522}
   m_RootOrder: 0
@@ -206,14 +212,16 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c6e19ac80739fd14cad01313b97771b5, type: 2}
+  - {fileID: 2100000, guid: 9c6d922302fb78a43a864910066476a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -234,6 +242,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1758733016680498
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +254,7 @@ GameObject:
   - component: {fileID: 4056469212665022}
   - component: {fileID: 33509385792206596}
   - component: {fileID: 23882984258156242}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rock_05_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,6 +271,7 @@ Transform:
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4159828343423522}
   m_RootOrder: 1
@@ -285,14 +295,16 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c6e19ac80739fd14cad01313b97771b5, type: 2}
+  - {fileID: 2100000, guid: 9c6d922302fb78a43a864910066476a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -313,3 +325,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
