@@ -6525,28 +6525,28 @@ MonoBehaviour:
   IsSnowing: 0
   DoesAtmosphereNeedUpdate: 0
   CurrentSettings:
-    m_fogColor: {r: 0.8000562, g: 0.5490691, b: 0.3215444, a: 1}
-    m_fogDensity: 0.0022547487
-    m_fogStart: 0.0005091036
-    m_fogEnd: 2092.5923
-    m_sunColor: {r: 0.792163, g: 0.7137065, b: 0.5411782, a: 1}
-    m_sunIntensity: 0.46784344
+    m_fogColor: {r: 0.80101085, g: 0.54990965, b: 0.32113257, a: 1}
+    m_fogDensity: 0.0041203257
+    m_fogStart: 0.0003999295
+    m_fogEnd: 4500
+    m_sunColor: {r: 0.7923114, g: 0.71324563, b: 0.54122025, a: 1}
+    m_sunIntensity: 0.7404376
     m_snowHeight: 67.05882
-    m_skyAmbient: {r: 0.22965552, g: 0.12332724, b: 0.036202915, a: 0.7400624}
-    m_equatorAmbient: {r: 0.70743704, g: 0.6262196, b: 0.6166645, a: 0.7400624}
-    m_groundAmbient: {r: 0.22522125, g: 0.11678739, b: 0.034859795, a: 0.7400624}
+    m_skyAmbient: {r: 0.5925349, g: 0.24112916, b: 0.02678592, a: 0.7545395}
+    m_equatorAmbient: {r: 0.75059736, g: 0.7369723, b: 0.7339066, a: 0.7545395}
+    m_groundAmbient: {r: 0.6007843, g: 0.17191401, b: 0.002585868, a: 0.7545395}
     m_intensityAmbient: 1
-    m_skyboxExposure: 1.6112674
-    m_skyboxTint: {r: 0.31915602, g: 0.14650312, b: 0.10085858, a: 1}
+    m_skyboxExposure: 2.284468
+    m_skyboxTint: {r: 0.53735584, g: 0.17222312, b: 0.048708454, a: 1}
     m_skyboxAtmosphereThickness: 0.08239567
     m_skyboxFogHeight: 0.9442908
     m_skyboxFogGradient: 0.8990096
-    m_cloudDomeBrightness: 1.5755864
-    m_startCloudDomeBrightness: 1.167101
-    m_cloudDensity: 0.09220874
-    m_cloudThickness: 4.5560346
-    m_cloudSpeed: 66.34274
-    m_cloudOpacity: 0.9569552
+    m_cloudDomeBrightness: 2.6817842
+    m_startCloudDomeBrightness: 1.9865068
+    m_cloudDensity: 0.118802354
+    m_cloudThickness: 4.6041293
+    m_cloudSpeed: 49.676308
+    m_cloudOpacity: 1.0451431
     m_fxBloomIntensity: 3
     m_fxTemperature: 3
     m_fxTint: 9
@@ -10392,14 +10392,14 @@ MonoBehaviour:
   m_snowingHeight: 35
   m_snowFadeHeight: 50
   m_snowDuration: 0
-  m_snowWaitTime: 214.45605
+  m_snowWaitTime: 422.864
   m_snowSampleStrength: 0
   m_savedSnowingHeight: 67.05882
   m_enableRain: 0
   m_rainIntensity: 0
   m_rainSampleStrength: 0
   m_rainDuration: 0
-  m_rainWaitTime: 181.01358
+  m_rainWaitTime: 470.56808
   m_thunderLightColor: {r: 0, g: 0.6313726, b: 1, a: 1}
   m_thunderLightIntensity: 2
   m_thunderAudioSources:
@@ -10573,30 +10573,6 @@ RenderTexture:
   m_Dimension: 2
   m_VolumeDepth: 1
   m_ShadowSamplingMode: 2
---- !u!114 &222151060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba17d399ab86974c8ef9551f6e8f8d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transformSettings:
-    translation: {x: 632.43665, y: 13.247086, z: -271.65424}
-    scale: {x: 6.718752, y: 1, z: 6.718752}
-    rotation: {x: 0, y: 0, z: 0}
-    flipScaleX: 0
-    flipScaleY: 0
-    flipScaleZ: 0
-  domainSettings:
-    noiseTypeName: Perlin
-    fractalTypeName: Fbm
-    noiseTypeParams: 
-    fractalTypeParams: '{"warpOffsets":{"x":-461.7986145019531,"y":-29.6933650970459,"z":-977.7000732421875,"w":0.0},"octavesMinMax":{"x":0.0,"y":16.0},"amplitudeMinMax":{"x":0.0,"y":1.0},"frequencyMinMax":{"x":0.0,"y":2.0},"lacunarityMinMax":{"x":0.0,"y":4.0},"persistenceMinMax":{"x":0.0,"y":1.0},"warpIterationsMinMax":{"x":0.0,"y":8.0},"warpStrengthMinMax":{"x":-2.0,"y":2.0},"octaves":8.0,"amplitude":0.07999999821186066,"frequency":1.0,"persistence":0.5,"lacunarity":1.2999999523162842,"warpIterations":3.799999952316284,"warpStrength":0.23999999463558198,"warpEnabled":true,"warpExpanded":true}'
 --- !u!114 &235897383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11083,70 +11059,6 @@ MonoBehaviour:
     m_selectedWorldBiomeMaskGUID: 
     m_growAndShrinkValue: 0
     m_globalSpawnerMaskStackRT: {fileID: 0}
---- !u!21 &271259584
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Override
-  m_Shader: {fileID: 4800000, guid: a3a3bc8785681554d9558e2ea68f100e, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _AdvancedCat: 1
-    - _Banner: 1
-    - _DirectionalCat: 1
-    - _DirectionalFalloff: 2
-    - _DirectionalIntensity: 1
-    - _FogAxisMode: 1
-    - _FogCameraMode: 0
-    - _FogCat: 1
-    - _FogColorDuo: 1
-    - _FogDistanceEnd: 200
-    - _FogDistanceFalloff: 2
-    - _FogDistanceStart: -200
-    - _FogHeightEnd: 200
-    - _FogHeightFalloff: 2
-    - _FogHeightStart: 0
-    - _FogIntensity: 1
-    - _FogLayersMode: 0
-    - _IsHeightFogPreset: 1
-    - _IsHeightFogShader: 1
-    - _JitterIntensity: 1
-    - _NoiseCat: 1
-    - _NoiseDistanceEnd: 50
-    - _NoiseIntensity: 1
-    - _NoiseMax: 1
-    - _NoiseMin: 0
-    - _NoiseModeBlend: 1
-    - _NoiseScale: 30
-    - _SkyboxCat: 1
-    - _SkyboxFogBottom: 0
-    - _SkyboxFogFalloff: 1
-    - _SkyboxFogFill: 1
-    - _SkyboxFogHeight: 1
-    - _SkyboxFogIntensity: 1
-    - _SkyboxFogOffset: 0
-    m_Colors:
-    - _DirectionalColor: {r: 1, g: 0.7793103, b: 0.5, a: 1}
-    - _DirectionalDir: {r: 0, g: 0, b: 0, a: 0}
-    - _FogAxisOption: {r: 0, g: 0, b: 0, a: 0}
-    - _FogColorEnd: {r: 0.8862745, g: 1.443137, b: 2, a: 1}
-    - _FogColorStart: {r: 0.4411765, g: 0.722515, b: 1, a: 1}
-    - _NoiseSpeed: {r: 0.5, g: 0, b: 0.5, a: 0}
-  m_BuildTextureStacks: []
 --- !u!114 &277243240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11616,21 +11528,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 271578591179189674, guid: a10498b197bd7e948a92cfea0c886077,
-        type: 3}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 271578591179189674, guid: a10498b197bd7e948a92cfea0c886077,
-        type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 271578591179189674, guid: a10498b197bd7e948a92cfea0c886077,
-        type: 3}
-      propertyPath: m_StaticShadowCaster
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1409621832264963781, guid: a10498b197bd7e948a92cfea0c886077,
         type: 3}
       propertyPath: m_RootOrder
@@ -11644,7 +11541,7 @@ PrefabInstance:
     - target: {fileID: 1409621832264963781, guid: a10498b197bd7e948a92cfea0c886077,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 32.18
+      value: 32.57
       objectReference: {fileID: 0}
     - target: {fileID: 1409621832264963781, guid: a10498b197bd7e948a92cfea0c886077,
         type: 3}
@@ -11690,6 +11587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: rover_7_retouches_UV.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784598880881052799, guid: a10498b197bd7e948a92cfea0c886077,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a10498b197bd7e948a92cfea0c886077, type: 3}
@@ -77631,7 +77533,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PWS/Skybox/PW_Procedural
   m_Shader: {fileID: 4800000, guid: 8d69440ee4f40094bb5566d6cdb622cf, type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _SUNDISK_HIGH_QUALITY
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -78425,7 +78328,7 @@ MonoBehaviour:
   renderPriority: 0
   manualPositionAndScale: 0
   styledSpace0: 0
-  overrideMaterial: {fileID: 271259584}
+  overrideMaterial: {fileID: 858548765}
   overrideCamToVolumeDistance: 1
   overrideVolumeDistanceFade: 0
   version: 0
@@ -78457,7 +78360,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1316049026}
+  - {fileID: 1464204122}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81667,6 +81570,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &858548765
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Override
+  m_Shader: {fileID: 4800000, guid: a3a3bc8785681554d9558e2ea68f100e, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _AdvancedCat: 1
+    - _Banner: 1
+    - _DirectionalCat: 1
+    - _DirectionalFalloff: 2
+    - _DirectionalIntensity: 1
+    - _FogAxisMode: 1
+    - _FogCameraMode: 0
+    - _FogCat: 1
+    - _FogColorDuo: 1
+    - _FogDistanceEnd: 200
+    - _FogDistanceFalloff: 2
+    - _FogDistanceStart: -200
+    - _FogHeightEnd: 200
+    - _FogHeightFalloff: 2
+    - _FogHeightStart: 0
+    - _FogIntensity: 1
+    - _FogLayersMode: 0
+    - _IsHeightFogPreset: 1
+    - _IsHeightFogShader: 1
+    - _JitterIntensity: 1
+    - _NoiseCat: 1
+    - _NoiseDistanceEnd: 50
+    - _NoiseIntensity: 1
+    - _NoiseMax: 1
+    - _NoiseMin: 0
+    - _NoiseModeBlend: 1
+    - _NoiseScale: 30
+    - _SkyboxCat: 1
+    - _SkyboxFogBottom: 0
+    - _SkyboxFogFalloff: 1
+    - _SkyboxFogFill: 1
+    - _SkyboxFogHeight: 1
+    - _SkyboxFogIntensity: 1
+    - _SkyboxFogOffset: 0
+    m_Colors:
+    - _DirectionalColor: {r: 1, g: 0.7793103, b: 0.5, a: 1}
+    - _DirectionalDir: {r: 0, g: 0, b: 0, a: 0}
+    - _FogAxisOption: {r: 0, g: 0, b: 0, a: 0}
+    - _FogColorEnd: {r: 0.8862745, g: 1.443137, b: 2, a: 1}
+    - _FogColorStart: {r: 0.4411765, g: 0.722515, b: 1, a: 1}
+    - _NoiseSpeed: {r: 0.5, g: 0, b: 0.5, a: 0}
+  m_BuildTextureStacks: []
 --- !u!114 &873448619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112138,55 +112105,6 @@ MonoBehaviour:
     m_selectedWorldBiomeMaskGUID: 
     m_growAndShrinkValue: 0
     m_globalSpawnerMaskStackRT: {fileID: 0}
---- !u!21 &1316049026
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Height Fog Global
-  m_Shader: {fileID: 4800000, guid: 3a7ef1b66bafb7a448a880ef76d2e6e6, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AdvancedCat: 1
-    - _AlphaCutoff: 0.5
-    - _Banner: 1
-    - _DirectionalCat: 1
-    - _FogCameraMode: 0
-    - _FogCat: 1
-    - _HeightFogGlobal: 1
-    - _IsHeightFogShader: 1
-    - _NoiseCat: 1
-    - _QueueControl: -1
-    - _QueueOffset: 0
-    - _SkyboxCat: 1
-    m_Colors:
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1340649014
 GameObject:
   m_ObjectHideFlags: 0
@@ -114008,6 +113926,55 @@ MonoBehaviour:
     m_selectedWorldBiomeMaskGUID: 
     m_growAndShrinkValue: 0
     m_globalSpawnerMaskStackRT: {fileID: 0}
+--- !u!21 &1464204122
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Height Fog Global
+  m_Shader: {fileID: 4800000, guid: 3a7ef1b66bafb7a448a880ef76d2e6e6, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdvancedCat: 1
+    - _AlphaCutoff: 0.5
+    - _Banner: 1
+    - _DirectionalCat: 1
+    - _FogCameraMode: 0
+    - _FogCat: 1
+    - _HeightFogGlobal: 1
+    - _IsHeightFogShader: 1
+    - _NoiseCat: 1
+    - _QueueControl: -1
+    - _QueueOffset: 0
+    - _SkyboxCat: 1
+    m_Colors:
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!114 &1470282686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116897,7 +116864,7 @@ PrefabInstance:
     - target: {fileID: 3450761047440964106, guid: 623cda9eabbc4544d93a7171d8720bd8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 948.3102
+      value: 938.55707
       objectReference: {fileID: 0}
     - target: {fileID: 3450761047440964106, guid: 623cda9eabbc4544d93a7171d8720bd8,
         type: 3}
@@ -116907,7 +116874,7 @@ PrefabInstance:
     - target: {fileID: 3450761047440964106, guid: 623cda9eabbc4544d93a7171d8720bd8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 910.9348
+      value: 910.85223
       objectReference: {fileID: 0}
     - target: {fileID: 3450761047440964106, guid: 623cda9eabbc4544d93a7171d8720bd8,
         type: 3}
@@ -122910,7 +122877,7 @@ MonoBehaviour:
       m_warpIterations: 3.8
       m_warpStrength: 0.24
       m_warpOffset: {x: -461.7986, y: -29.693365, z: -977.7001, w: 0}
-    m_noiseSettings: {fileID: 222151060}
+    m_noiseSettings: {fileID: 1905347443}
     m_noiseToolSettings:
       worldHeightRemap: {x: 0, y: 0}
       coordSpace: 0
@@ -131543,6 +131510,30 @@ MonoBehaviour:
     m_selectedWorldBiomeMaskGUID: 
     m_growAndShrinkValue: 0
     m_globalSpawnerMaskStackRT: {fileID: 0}
+--- !u!114 &1905347443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba17d399ab86974c8ef9551f6e8f8d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformSettings:
+    translation: {x: 632.43665, y: 13.247086, z: -271.65424}
+    scale: {x: 6.718752, y: 1, z: 6.718752}
+    rotation: {x: 0, y: 0, z: 0}
+    flipScaleX: 0
+    flipScaleY: 0
+    flipScaleZ: 0
+  domainSettings:
+    noiseTypeName: Perlin
+    fractalTypeName: Fbm
+    noiseTypeParams: 
+    fractalTypeParams: '{"warpOffsets":{"x":-461.7986145019531,"y":-29.6933650970459,"z":-977.7000732421875,"w":0.0},"octavesMinMax":{"x":0.0,"y":16.0},"amplitudeMinMax":{"x":0.0,"y":1.0},"frequencyMinMax":{"x":0.0,"y":2.0},"lacunarityMinMax":{"x":0.0,"y":4.0},"persistenceMinMax":{"x":0.0,"y":1.0},"warpIterationsMinMax":{"x":0.0,"y":8.0},"warpStrengthMinMax":{"x":-2.0,"y":2.0},"octaves":8.0,"amplitude":0.07999999821186066,"frequency":1.0,"persistence":0.5,"lacunarity":1.2999999523162842,"warpIterations":3.799999952316284,"warpStrength":0.23999999463558198,"warpEnabled":true,"warpExpanded":true}'
 --- !u!114 &1913373604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133070,22 +133061,22 @@ MonoBehaviour:
   m_priorityReflectionProbes: []
   m_nonPriorityReflectionProbes: []
   m_lightCheckData:
-    m_sunColor: {r: 0.792163, g: 0.7137065, b: 0.5411782, a: 1}
-    m_sunIntensity: 0.46784344
-    m_sunRotation: {x: 29.999998, y: 180, z: 180}
-    m_skyAmbientColor: {r: 0.22965552, g: 0.12332724, b: 0.036202915, a: 0.7400624}
-    m_equatorAmbientColor: {r: 0.70743704, g: 0.6262196, b: 0.6166645, a: 0.7400624}
-    m_groundAmbientColor: {r: 0.22522125, g: 0.11678739, b: 0.034859795, a: 0.7400624}
+    m_sunColor: {r: 0.7923114, g: 0.71324563, b: 0.54122025, a: 1}
+    m_sunIntensity: 0.7404376
+    m_sunRotation: {x: 90, y: 0, z: 0}
+    m_skyAmbientColor: {r: 0.5925349, g: 0.24112916, b: 0.02678592, a: 0.7545395}
+    m_equatorAmbientColor: {r: 0.75059736, g: 0.7369723, b: 0.7339066, a: 0.7545395}
+    m_groundAmbientColor: {r: 0.6007843, g: 0.17191401, b: 0.002585868, a: 0.7545395}
     m_ambientIntensity: 1
-    m_skyTintColor: {r: 0.31915602, g: 0.14650312, b: 0.10085858, a: 1}
-    m_skyExposure: 1.6112674
+    m_skyTintColor: {r: 0.53735584, g: 0.17222312, b: 0.048708454, a: 1}
+    m_skyExposure: 2.284468
     m_skyRotation: 0
     m_skyHDRITexture: {fileID: 0}
     m_skyAtmosphereThickness: 0.08239567
-    m_skyGroundColor: {r: 0.8000562, g: 0.54906917, b: 0.32154438, a: 1}
+    m_skyGroundColor: {r: 0.80101085, g: 0.54990965, b: 0.32113254, a: 1}
     m_minute: 0
     m_checkMinuteTime: 30
-    m_hour: 16
+    m_hour: 12
     m_checkHourTime: 1
     m_snowEnabled: 0
     m_rainEnabled: 0
