@@ -9,6 +9,10 @@ public class InputManager : MonoBehaviour
     private PlayerInput _playerInput;
     private PlayerController _playerController;
     private InputAction _moveActions; 
+    private DefaultInputActions _uiActions;
+
+    //Input UI
+    
 
     [Header("Scanner")]
     [SerializeField] private GameObject _scanPrefab; 
@@ -22,6 +26,9 @@ public class InputManager : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         _moveActions = _playerInput.actions.FindAction("Move");
         _moveActions = _playerInput.actions.FindAction("Scan");
+
+        
+        
     }
 
     // public void OnMove()
