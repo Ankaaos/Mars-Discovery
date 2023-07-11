@@ -11,12 +11,30 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 _velocity;
 
+    [GUIColor("orange")]
+    [BoxGroup("GRAVITY", centerLabel: true)]
     [SerializeField] private float _gravity;
-    [SerializeField] private float _speed;
-    [SerializeField] private float _backSpeed;
-    [SerializeField] private float _rotateSpeed;
-    [SerializeField] private float _speedRotateWheels;
 
+    [Space]
+    [GUIColor("cyan")]
+    [BoxGroup("SPEED ALL", centerLabel: true)]
+    [SerializeField] private float _moveSpeed;
+
+    [GUIColor("green")]
+    [BoxGroup("SPEED ALL", centerLabel: true)]
+    [SerializeField] private float _frontSpeedRotateWheels;
+    
+    [GUIColor("green")]
+    [BoxGroup("SPEED ALL", centerLabel: true)]
+    [SerializeField] private float _backSpeedRotateWheels;
+
+    [GUIColor("red")]
+    [BoxGroup("SPEED ALL", centerLabel: true)]
+    [Range(0, 150)][SerializeField] private float _rotateSpeedCamera;
+
+    [Space]
+    [GUIColor("grey")]
+    [BoxGroup("TRANSFORM", centerLabel: true)]
     [SerializeField] private Transform[] _transformWheels;
 
 
@@ -38,23 +56,23 @@ public class PlayerController : MonoBehaviour
     {
         // Récupérer l'axe vertical du joystick gauche
         float moveY = Gamepad.current.leftStick.y.ReadValue();
-        
+
         // Calculer le mouvement en fonction de l'axe vertical et de la rotation
         Vector3 movement = transform.forward * moveY;
-        movement *= _speed * Time.fixedDeltaTime;
+        movement *= _moveSpeed * Time.fixedDeltaTime;
 
         //move back
         if (moveY < 0)
         {
-            movement *= _backSpeed * Time.fixedDeltaTime;   
-            WheelRotateFront();
+            movement *= _backSpeedRotateWheels * Time.fixedDeltaTime;
+            WheelRotateBack();
         }
 
         // move front
         if (moveY > 0)
         {
-            movement *= _speed * Time.fixedDeltaTime;    
-            WheelRotateBack(); 
+            movement *= _moveSpeed * Time.fixedDeltaTime;
+            WheelRotateFront();
         }
 
         _rb.MovePosition(_rb.position + movement);
@@ -66,23 +84,23 @@ public class PlayerController : MonoBehaviour
         float rotation = Gamepad.current.rightStick.x.ReadValue();
 
         // Calculer la rotation en fonction de l'axe
-        Quaternion deltaRotation = Quaternion.Euler(Vector3.up * (rotation * _rotateSpeed * Time.fixedDeltaTime));
+        Quaternion deltaRotation = Quaternion.Euler(Vector3.up * (rotation * _rotateSpeedCamera * Time.fixedDeltaTime));
         _rb.MoveRotation(_rb.rotation * deltaRotation);
-    }
-
-    public void WheelRotateFront()
-    {
-        foreach (Transform transform in _transformWheels)
-        {
-            transform.rotation *= Quaternion.Euler(0, _speedRotateWheels *_speed  * Time.deltaTime, 0);
-        }
     }
 
     public void WheelRotateBack()
     {
         foreach (Transform transform in _transformWheels)
         {
-            transform.rotation *= Quaternion.Euler(0, -_speedRotateWheels *_backSpeed  * Time.deltaTime, 0);
+            transform.rotation *= Quaternion.Euler(0, -_frontSpeedRotateWheels * _backSpeedRotateWheels * Time.deltaTime, 0);
+        }
+    }
+
+    public void WheelRotateFront()
+    {
+        foreach (Transform transform in _transformWheels)
+        {
+            transform.rotation *= Quaternion.Euler(0, _frontSpeedRotateWheels * _moveSpeed * Time.deltaTime, 0);
         }
     }
 
