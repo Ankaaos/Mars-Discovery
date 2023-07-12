@@ -13,7 +13,7 @@ public class SphereDetection : MonoBehaviour
     private void Awake()
     {
         _shaderManager = GetComponent<Shader_Manager>();
-        Debug.Log("SphereDetection Awake");
+        
 
     }
 

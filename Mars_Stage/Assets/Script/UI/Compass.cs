@@ -11,8 +11,6 @@ public class Compass : MonoBehaviour
     private void Update()
     {
         dir.z = _playerTransform.eulerAngles.y;
-        transform.localEulerAngles = dir;
-
-        Debug.Log(dir.z);    
+        transform.localEulerAngles = dir; 
     }
 }

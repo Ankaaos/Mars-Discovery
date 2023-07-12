@@ -21,7 +21,7 @@ public class Shader_Manager : MonoBehaviour
         _opacity = 0;
         UpdateOpcaticy();
 
-        Debug.Log("ScannerController Start");
+        
     }
 
     private void Update()

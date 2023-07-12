@@ -12,20 +12,11 @@ public class ScannerController : MonoBehaviour
 
     [SerializeField] private SphereDetection _sphereDetection;
 
-
-    // [Header("Script")]
-    // [SerializeField] private Shader_Manager _shaderManager;
-
     private void Start()
     {
         _sphereDetection = GetComponent<SphereDetection>();
         DestroyObject();
-
-        Debug.Log("SphereDetection reference: " + _sphereDetection);
-
     }
-
-
 
     private void Update()
     {
@@ -33,14 +24,9 @@ public class ScannerController : MonoBehaviour
         float growing = this._speed * Time.deltaTime;
         this.transform.localScale = new Vector3(vectorMesh.x + growing, vectorMesh.y + growing, vectorMesh.z + growing);
 
-        // _sphereDetection = GetComponent<SphereDetection>();
         _sphereDetection = FindObjectOfType<SphereDetection>();
 
-        
-
-
     }
-
 
     public void DestroyObject()
     {
@@ -54,7 +40,6 @@ public class ScannerController : MonoBehaviour
             return;
         }
         _sphereDetection.StartDetection();
-        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -62,19 +47,5 @@ public class ScannerController : MonoBehaviour
         _sphereDetection.StartDetection();
     }
 
-
+    
 }
-
-// private void Awake()
-//     {
-//         _shaderManager = FindObjectOfType<Shader_Manager>();
-//     }
-
-// if (objShaderManager != null)
-            //{
-                // objShaderManager.StartFadeInCouroutine();
-                // _shaderManager._opacity = 1;
-                // _shaderManager.UpdateOpcaticy();
-                
-                // objShaderManager.StartFadeOutCouroutine();
-            //}
